@@ -11,7 +11,7 @@ def inject_dependency():
 def module_inject_dependency():
     print("inside module scoped fixture")
 
-
+@pytest.mark.xfail
 def test_fixture_demo(inject_dependency, module_inject_dependency):
     print("executing fixture demo test case")
 
