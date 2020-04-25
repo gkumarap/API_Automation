@@ -9,5 +9,5 @@ params ={"appid":appid,'id':id}
 
 response= REQ.get(Base_url,params=params)
 
-print(response.request)
-print(response.text)
+print(response.request.url)
+# print(response.text)
