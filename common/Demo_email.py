@@ -18,9 +18,11 @@ currentpath = os.getcwd()
 
 fromEmail = os.environ.get('USER_EMAIL')
 print(fromEmail)
-toEmail = {'arunamanikarnika@gmail.com'}
+toEmail = {'anantsmail@gmail.com'}
 password = os.environ.get('EMAIL_PASSWORD')
 print(password)
+
+str = '123fhj'
 
 
 

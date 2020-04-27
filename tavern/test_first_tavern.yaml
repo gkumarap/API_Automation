@@ -1,0 +1,11 @@
+test_name : first test
+stages:
+  -name: stage 1
+  request:
+    url : https://jsonplaceholder.typicode.com/posts/1
+    method: GET
+  response:
+    status_code: 200
+    json:
+      id : 1
+
