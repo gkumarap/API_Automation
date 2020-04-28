@@ -1,5 +1,5 @@
-from common.GET import getRequests
-from common.GET import baseurl
+from src.common.GET import getRequests
+from src.common.GET import baseurl
 import json
 import jsonpath
 

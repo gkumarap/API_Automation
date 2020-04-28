@@ -1,9 +1,9 @@
 import imghdr
 import smtplib
 from email.message import EmailMessage
-from common.Demo_email import fromEmail
-from common.Demo_email import toEmail
-from common.Demo_email import password
+from src.common.Demo_email import fromEmail
+from src.common.Demo_email import toEmail
+from src.common.Demo_email import password
 
 toEmailAddresslist ={'anantsmail@gmail.com','mailztoprabha@gmail.com','aravinthdec07@gmail.com','govindec15@gmail.com'}
 message = EmailMessage()
@@ -12,7 +12,7 @@ message['FROM'] =  fromEmail
 message['TO'] = toEmail
 message.set_content('Attachment TEST')
 
-with open('IMG_4732.JPG','rb') as file:
+with open('IMG_4732.JPG', 'rb') as file:
     data = file.read()
     file_type = imghdr.what(file.name)
     print(file_type)
